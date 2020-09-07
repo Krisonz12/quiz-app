@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Register from '../components/Register'
-import Login from '../components/Login'
+import Register from '../components/auth/Register'
+import Login from '../components/auth/Login'
+import Quiz from '../components/quiz/Quiz'
 
 Vue.use(VueRouter)
 
@@ -20,7 +21,12 @@ Vue.use(VueRouter)
   {
     path: '/register',
     name: 'Register',
-    component: Register
+    component: Register,
+  },
+  {
+    path: '/quiz',
+    name: 'Quiz',
+    component: Quiz,
   }
 ]
 

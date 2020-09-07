@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import axios from 'axios'
 import 'materialize-css'
 import 'material-design-icons/iconfont/material-icons.css'
-import firebase from 'firebase'
+import firebase from 'firebase' 
+
+
 
 Vue.config.productionTip = false
 
@@ -18,6 +21,9 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig); 
+
+// add these before Vue is instantiated
+window.onload = require('axios')
 
 new Vue({
   router,
